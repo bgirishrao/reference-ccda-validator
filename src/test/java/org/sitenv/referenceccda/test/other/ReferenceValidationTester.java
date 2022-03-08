@@ -1,7 +1,8 @@
 package org.sitenv.referenceccda.test.other;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-import static org.sitenv.referenceccda.test.other.ReferenceValidationLogger.*;
+import static org.sitenv.referenceccda.test.other.ReferenceValidationLogger.printResults;
+import static org.sitenv.vocabularies.test.other.ValidationLogger.logResults;
 import static org.sitenv.vocabularies.test.other.ValidationLogger.println;
 
 import java.io.BufferedReader;

@@ -9,7 +9,8 @@ import java.util.List;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.logging.log4j.Logger; import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
@@ -52,7 +53,6 @@ import org.sitenv.referenceccda.validators.RefCCDAValidationResult;
 import org.sitenv.referenceccda.validators.XPathIndexer;
 import org.sitenv.referenceccda.validators.enums.UsrhSubType;
 import org.sitenv.referenceccda.validators.enums.ValidationResultType;
-import org.sitenv.vocabularies.constants.VocabularyConstants;
 import org.sitenv.vocabularies.constants.VocabularyConstants.SeverityLevel;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.annotation.RequestScope;

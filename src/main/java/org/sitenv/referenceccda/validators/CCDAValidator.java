@@ -1,8 +1,8 @@
 package org.sitenv.referenceccda.validators;
 
-import org.xml.sax.SAXException;
-
 import java.util.ArrayList;
+
+import org.xml.sax.SAXException;
 
 /**
  * Created by Brian on 10/20/2015.
