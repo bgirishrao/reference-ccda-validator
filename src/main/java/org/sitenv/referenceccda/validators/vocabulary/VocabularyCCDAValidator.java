@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger; import org.apache.logging.log4j.LogManager;
 import org.sitenv.referenceccda.validators.BaseCCDAValidator;
 import org.sitenv.referenceccda.validators.CCDAValidator;
 import org.sitenv.referenceccda.validators.RefCCDAValidationResult;
@@ -29,7 +29,7 @@ public class VocabularyCCDAValidator extends BaseCCDAValidator implements CCDAVa
     private String vocabularyXpathExpressionConfiguration;
     private VocabularyValidationService vocabularyValidationService;
     private GlobalCodeValidatorResults globalCodeValidatorResults;
-    private static Logger logger = Logger.getLogger(VocabularyCCDAValidator.class);
+    private static Logger logger = LogManager.getLogger(VocabularyCCDAValidator.class);
 
     @Autowired
     public VocabularyCCDAValidator(VocabularyValidationService vocabularyValidationService) {

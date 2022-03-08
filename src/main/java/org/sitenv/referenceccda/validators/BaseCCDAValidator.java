@@ -3,7 +3,7 @@ package org.sitenv.referenceccda.validators;
 import java.io.IOException;
 import java.io.StringReader;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger; import org.apache.logging.log4j.LogManager;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
@@ -11,7 +11,7 @@ import org.xml.sax.helpers.XMLReaderFactory;
 
 public abstract class BaseCCDAValidator {
     public static final String UTF8_BOM = "\uFEFF";
-    private static Logger logger = Logger.getLogger(BaseCCDAValidator.class);
+    private static Logger logger = LogManager.getLogger(BaseCCDAValidator.class);
 	
     protected static void trackXPathsInXML(XPathIndexer xpathIndexer, String xmlString) throws SAXException{    	    	
         XMLReader parser = XMLReaderFactory.createXMLReader();
