@@ -245,6 +245,7 @@
 			<artifactId>commons-lang3</artifactId>
 			<version>3.12.0</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-api</artifactId>
@@ -255,6 +256,24 @@
 			<artifactId>log4j-core</artifactId>
 			<version>2.17.2</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl 
+			SLF4J Bridge - required to bridge dependencies which use sl4j with log4j1x 
+			to bridge to using log4j2 on both ends -->
+		<!-- may or may not need one or both of these to work with spring... -->
+		<!--
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-slf4j-impl</artifactId>
+			<version>2.17.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>2.0.0-alpha6</version>
+			<scope>test</scope>
+		</dependency>
+		-->
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
